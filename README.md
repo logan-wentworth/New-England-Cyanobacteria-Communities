@@ -30,3 +30,22 @@ o-trimmed-sequences /home/users/lw1092/dc_workshop/ProjectData/trimmed_sequences
 qiime demux summarize \
 --i-data /home/users/lw1092/dc_workshop/ProjectData/trimmed_sequences.qza \
 --o-visualization  /home/users/lw1092/dc_workshop/ProjectData/visualization.qzv
+
+qiime dada2 denoise-paired \
+    --i-demultiplexed-seqs qiime_out/${run}_demux_cutadapt.qza  \
+    --p-trunc-len-f ${trunclenf} \
+    --p-trunc-len-r ${trunclenr} \
+    --p-trim-left-f 0 \
+    --p-trim-left-r 0 \
+    --p-n-threads 4 \
+    --o-denoising-stats /home/users/lw1092/dc_workshop/ProjectData/denoising-stats.qza \
+    --o-table /home/users/lw1092/dc_workshop/ProjectData/feature_table.qza \
+    --o-representative-sequences /home/users/lw1092/dc_workshop/ProjectData/rep-seqs.qza
+
+qiime metadata tabulate \
+    --m-input-file /home/users/lw1092/dc_workshop/ProjectData/denoising-stats.qza \
+    --o-visualization /home/users/lw1092/dc_workshop/ProjectData/denoising-stats.qzv
+
+qiime feature-table tabulate-seqs \
+        --i-data /home/users/lw1092/dc_workshop/ProjectData/rep-seqs.qza \
+        --o-visualization /home/users/lw1092/dc_workshop/ProjectData/rep-seqs.qzv
