@@ -12,7 +12,7 @@ qiime tools import \
 --output-path /home/users/lw1092/dc_workshop/ProjectData/imported_files \
 
 qiime cutadapt trim-paired \
---i-demultiplexed-sequences /home/users/lw1092/dc_workshop/ProjectData/imported_files \
+--i-demultiplexed-sequences /home/users/lw1092/dc_workshop/ProjectData/imported_files.qza \
 --p-cores 4 \
 --p-front-f GTGYCAGCMGCCGCGGTAA \
 --p-front-r CCGYCAATTYMTTTRAGTTT \
