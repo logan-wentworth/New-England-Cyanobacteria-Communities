@@ -6,7 +6,7 @@ chmod +x /home/users/lw1092/dc_workshop/New-England-Cyanobacteria/fastp.sh
 /home/users/lw1092/dc_workshop/New-England-Cyanobacteria-Communities/fastp.sh 150 /tmp/gen711_project_data/cyano/fastqs /home/users/lw1092/dc_workshop/ProjectData/trimmed_fastqs
 
 qiime tools import \
---SampleData[PairedEndSequencesWithQuality] \
+--type "SampleData[PairedEndSequencesWithQuality]" \
 --input-format CasavaOneEightSingleLanePerSampleDirFmt \
 --input-path /home/users/lw1092/dc_workshop/ProjectData/trimmed_fastqs/ \
 --output-path /home/users/lw1092/dc_workshop/ProjectData/imported_files \
