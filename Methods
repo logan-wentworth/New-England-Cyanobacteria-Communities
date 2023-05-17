@@ -27,8 +27,8 @@ qiime demux summarize \
 
 qiime dada2 denoise-paired \
     --i-demultiplexed-seqs qiime_out/${run}_demux_cutadapt.qza  \
-    --p-trunc-len-f ${trunclenf} \
-    --p-trunc-len-r ${trunclenr} \
+    --p-trunc-len-f 0 \
+    --p-trunc-len-r 0 \
     --p-trim-left-f 0 \
     --p-trim-left-r 0 \
     --p-n-threads 4 \
