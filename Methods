@@ -26,7 +26,7 @@ qiime demux summarize \
 --o-visualization  /home/users/lw1092/dc_workshop/ProjectData/visualization.qzv
 
 qiime dada2 denoise-paired \
-    --i-demultiplexed-seqs qiime_out/${run}_demux_cutadapt.qza  \
+    --i-demultiplexed-seqs /home/users/lw1092/dc_workshop/ProjectData/trimmed_sequences.qza  \
     --p-trunc-len-f 0 \
     --p-trunc-len-r 0 \
     --p-trim-left-f 0 \
