@@ -15,4 +15,5 @@ Several issues arose during the denoising step, but changing values in the p-tru
 Figure 1. Demultiplexed Forward Read Frequency Histogram. Graph was made with visualization.qzv in the QIIME 2 View browser
 
 *Project data was provided by Dr. Jeffrey Miller, UNH
-** The QIIME 2 Browsers was used 
+
+** The QIIME 2 Browser was used to generate every png in this project
