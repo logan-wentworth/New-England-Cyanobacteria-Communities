@@ -10,4 +10,4 @@ All code used to run the trimming, demultiplexing, etc., are detailed in the met
 QZA and QZV files were visualized using QIIME 2 View
 Several issues arose during the denoising step, but changing values in the p-trunc-len-f and p-trunc-len-r lines fixed it
 ## Findings
-![plot](plots/Demultipl
+![plot](Plots/Demultiplex Summary Forward.PNG)
