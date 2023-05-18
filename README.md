@@ -11,3 +11,4 @@ QZA and QZV files were visualized using QIIME 2 View
 Several issues arose during the denoising step, but changing values in the p-trunc-len-f and p-trunc-len-r lines fixed it
 ## Findings
 ![plot](Plots/Demultiplex_Summary_Forward.PNG)
+![plot](Plots/Demultiplex_Summary_Reverse.PNG)
