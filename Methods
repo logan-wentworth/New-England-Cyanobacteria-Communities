@@ -1,4 +1,5 @@
 Methods
+
 cp /tmp/gen711_project_data/fastp.sh /home/users/lw1092/dc_workshop/New-England-Cyanobacteria/fastp.sh
   
 chmod +x /home/users/lw1092/dc_workshop/New-England-Cyanobacteria/fastp.sh
@@ -35,8 +36,6 @@ qiime dada2 denoise-paired \
     --o-denoising-stats /home/users/lw1092/dc_workshop/ProjectData/denoising-stats.qza \
     --o-table /home/users/lw1092/dc_workshop/ProjectData/feature_table.qza \
     --o-representative-sequences /home/users/lw1092/dc_workshop/ProjectData/rep-seqs.qza
-
-**Progressed to this point; issues with denousing and trunc len from class file and this one, can't get either to work with trying different values
 
 qiime metadata tabulate \
     --m-input-file /home/users/lw1092/dc_workshop/ProjectData/denoising-stats.qza \
